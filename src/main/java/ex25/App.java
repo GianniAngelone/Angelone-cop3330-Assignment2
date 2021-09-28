@@ -12,17 +12,13 @@ public class App {
         System.out.print("Enter a password: ");
         String password = input.nextLine();
         //Here we read the input from the user
-
         if (passwordValidator(password) == 1) {
             System.out.print("The password " + password + " is a very weak password.");
-        }
-        else if (passwordValidator(password) == 2) {
+        } else if (passwordValidator(password) == 2) {
             System.out.print("The password " + password + " is a weak password.");
-        }
-        else if (passwordValidator(password) == 3) {
+        } else if (passwordValidator(password) == 3) {
             System.out.print("The password " + password + " is a strong password.");
-        }
-        else if (passwordValidator(password) == 4) {
+        } else if (passwordValidator(password) == 4) {
             System.out.print("The password " + password + " is a very strong password.");
         }
     }
